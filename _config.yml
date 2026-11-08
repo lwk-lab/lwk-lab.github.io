@@ -19,7 +19,7 @@
 # ---------- 연구실 기본 정보 ----------
 lab:
   name: 이우경 LAB
-  name_en: Lee Woo-kyung Lab
+  name_en: Lee Woo-kyeong Lab
   subtitle: 이우경 교수 연구실
   affiliation: 서울사이버대학교 대학원 상담·임상심리학과
   tagline: 캠퍼스는 온라인에 있지만 연구는 실재합니다. 전국 각지에서 각자의 삶을 살아가며 함께 공부하는 작은 연구 공동체입니다.
@@ -48,12 +48,12 @@ principles:
 #  photo: 이미지 파일을 저장소의 images 폴더에 올린 뒤 "images/파일명.jpg" 로 적으면 사진이 표시됩니다. 비우면 이니셜로 표시.
 pi:
   name: 이우경
-  name_en: Lee Woo-kyung
+  name_en: Lee Woo-kyeong
   title: 교수 · 지도교수
   photo: ""
   summary: 임상심리전문가로서 정신병원 임상 현장과 학계를 거쳐 서울사이버대학교에서 상담·임상심리 전문가를 양성하고 있습니다. 마음챙김 기반 개입, 심리평가, 조현병 환자의 인지재활을 오랫동안 연구해 왔습니다.
   phone: 02-944-5152
-  email: ""
+  email: wisemin96@iscu.ac.kr
   courses:
     - 고급이상심리학
     - 심리평가
@@ -200,7 +200,7 @@ contact:
   - label: 전화
     value: 02-944-5152
   - label: 이메일
-    value: 이메일 주소를 입력하세요
+    value: wisemin96@iscu.ac.kr
   - label: 소속
     value: 서울사이버대학교 대학원 상담·임상심리학과
 

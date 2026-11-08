@@ -1,0 +1,23 @@
+---
+# 소식(news) 목록을 RSS로 내보내는 파일입니다. 수정할 필요 없습니다.
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.lab.name }} 소식</title>
+  <link>{{ site.url }}/</link>
+  <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+  <description>{{ site.lab.description | xml_escape }}</description>
+  <language>ko</language>
+  <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S +0900" }}</lastBuildDate>
+  {%- for n in site.news %}
+  <item>
+    <title>{{ n.text | xml_escape }}</title>
+    <link>{{ site.url }}/#news</link>
+    <guid isPermaLink="false">{{ site.url }}/news/{{ n.date }}-{{ forloop.index }}</guid>
+    <pubDate>{{ n.date | date: "%a, %d %b %Y 09:00:00 +0900" }}</pubDate>
+    <description>{{ n.text | xml_escape }}</description>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>

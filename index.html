@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이우경 LAB | 이우경 교수 연구실</title>
+<meta name="description" content="이우경 교수 연구실(이우경 LAB) 공식 홈페이지. 지도교수 이우경, 박사과정 천윤형, 석사과정 권혁민으로 구성된 연구실의 소개, 구성원, 연구 분야, 연락처를 안내합니다.">
+<meta name="keywords" content="이우경 LAB, 이우경 연구실, 이우경 교수, 천윤형, 권혁민, 연구실 홈페이지, 대학원 연구실">
+<meta name="robots" content="index, follow">
+<!-- 검색엔진 소유 확인 태그: 네이버 서치어드바이저 / 구글 서치콘솔에서 받은 메타태그를 아래 두 줄에 붙여넣으세요 -->
+<!-- <meta name="naver-site-verification" content="여기에_네이버_코드"> -->
+<!-- <meta name="google-site-verification" content="여기에_구글_코드"> -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="이우경 LAB | 이우경 교수 연구실">
+<meta property="og:description" content="이우경 교수 연구실 공식 홈페이지 — 구성원, 연구 분야, 연락처 안내">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "이우경 LAB",
+  "alternateName": "이우경 연구실",
+  "description": "이우경 교수가 지도하는 대학원 연구실",
+  "member": [
+    {"@type": "Person", "name": "이우경", "jobTitle": "지도교수"},
+    {"@type": "Person", "name": "천윤형", "jobTitle": "박사과정"},
+    {"@type": "Person", "name": "권혁민", "jobTitle": "석사과정"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf7; --ink:#1d1f24; --muted:#5f6470; --line:#e6e2d9;
+    --accent:#1f4e79; --accent-soft:#e8eff6; --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{font-family:"Noto Serif KR",serif;font-weight:700;font-size:1.15rem;letter-spacing:.02em}
+  .brand span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem;color:var(--muted)}
+  nav a:hover{color:var(--accent)}
+  @media (max-width:560px){nav ul{gap:14px;font-size:.85rem}}
+
+  .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:500}
+  h1{font-family:"Noto Serif KR",serif;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.2;margin:14px 0 20px;font-weight:700}
+  .lead{font-size:1.08rem;color:var(--muted);max-width:620px;margin:0}
+  .hero-meta{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+  .stat{display:flex;flex-direction:column}
+  .stat b{font-size:1.5rem;font-family:"Noto Serif KR",serif;color:var(--accent)}
+  .stat small{color:var(--muted);font-size:.85rem}
+
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-family:"Noto Serif KR",serif;font-size:1.65rem;margin:0 0 8px}
+  .sub{color:var(--muted);margin:0 0 36px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 24px;transition:transform .15s,box-shadow .15s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(31,78,121,.08)}
+  .avatar{width:64px;height:64px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:"Noto Serif KR",serif;font-weight:700;font-size:1.35rem;margin-bottom:18px}
+  .role{display:inline-block;font-size:.76rem;letter-spacing:.06em;color:var(--accent);background:var(--accent-soft);padding:3px 10px;border-radius:999px;margin-bottom:8px;font-weight:500}
+  .name{font-size:1.2rem;font-weight:700;margin:0 0 6px}
+  .desc{color:var(--muted);font-size:.93rem;margin:0}
+  .card.pi{grid-column:1 / -1;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+  .card.pi .avatar{margin:0;width:84px;height:84px;font-size:1.7rem}
+  @media (max-width:560px){.card.pi{grid-template-columns:1fr}}
+
+  .topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .topic{padding:18px 20px;border-left:3px solid var(--accent);background:var(--card);border-radius:0 10px 10px 0;font-weight:500}
+  .topic small{display:block;font-weight:400;color:var(--muted);font-size:.86rem;margin-top:4px}
+
+  .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .contact div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+  .contact dt{font-size:.8rem;color:var(--muted);letter-spacing:.06em;margin-bottom:4px}
+  .contact dd{margin:0;font-weight:500}
+
+  footer{padding:36px 0 48px;color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">이우경 <span>LAB</span></a>
+    <nav aria-label="주요 메뉴">
+      <ul>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#members">구성원</a></li>
+        <li><a href="#research">연구</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Lee Woo-kyung Laboratory</div>
+      <h1>이우경 LAB<br>이우경 교수 연구실</h1>
+      <p class="lead">함께 질문하고, 끝까지 파고드는 작은 연구실입니다. 지도교수와 대학원생이 긴밀하게 협력하며 연구를 이어갑니다.</p>
+      <div class="hero-meta">
+        <div class="stat"><b>3</b><small>구성원</small></div>
+        <div class="stat"><b>1</b><small>지도교수</small></div>
+        <div class="stat"><b>2</b><small>대학원생</small></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>연구실 소개</h2>
+      <p class="sub">이우경 LAB은 이우경 교수의 지도 아래 운영되는 대학원 연구실입니다.</p>
+      <p>소규모 연구실의 장점을 살려 구성원 각자가 연구 주제를 깊이 있게 탐구하고, 정기 세미나와 토론을 통해 서로의 연구를 발전시킵니다. 연구에 관심 있는 학부생·대학원 진학 희망자의 문의를 환영합니다.</p>
+    </div>
+  </section>
+
+  <section id="members">
+    <div class="wrap">
+      <h2>구성원</h2>
+      <p class="sub">지도교수 1명, 박사과정 1명, 석사과정 1명으로 구성되어 있습니다.</p>
+      <div class="grid">
+        <article class="card pi">
+          <div class="avatar" aria-hidden="true">이</div>
+          <div>
+            <span class="role">지도교수 · Principal Investigator</span>
+            <h3 class="name">이우경 <small style="font-weight:400;color:var(--muted)">Lee Woo-kyung</small></h3>
+            <p class="desc">연구실을 이끄는 지도교수로서 연구 방향을 설계하고 대학원생의 연구를 지도합니다.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="avatar" aria-hidden="true">천</div>
+          <span class="role">박사과정 · Ph.D. Student</span>
+          <h3 class="name">천윤형 <small style="font-weight:400;color:var(--muted)">Cheon Yun-hyeong</small></h3>
+          <p class="desc">박사과정 연구원으로 연구실의 핵심 연구를 수행하고 있습니다.</p>
+        </article>
+        <article class="card">
+          <div class="avatar" aria-hidden="true">권</div>
+          <span class="role">석사과정 · M.S. Student</span>
+          <h3 class="name">권혁민 <small style="font-weight:400;color:var(--muted)">Kwon Hyeok-min</small></h3>
+          <p class="desc">석사과정 연구원으로 연구실의 연구 프로젝트에 참여하고 있습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <h2>연구 분야</h2>
+      <p class="sub">연구실의 주요 연구 주제입니다. 세부 내용은 추후 업데이트될 예정입니다.</p>
+      <div class="topics">
+        <div class="topic">연구 주제 1<small>세부 설명을 입력하세요</small></div>
+        <div class="topic">연구 주제 2<small>세부 설명을 입력하세요</small></div>
+        <div class="topic">연구 주제 3<small>세부 설명을 입력하세요</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>연락처</h2>
+      <p class="sub">연구실 방문, 공동연구, 대학원 진학 관련 문의를 환영합니다.</p>
+      <dl class="contact">
+        <div><dt>지도교수</dt><dd>이우경 교수</dd></div>
+        <div><dt>이메일</dt><dd>이메일 주소를 입력하세요</dd></div>
+        <div><dt>위치</dt><dd>소속 대학 · 건물 · 호수를 입력하세요</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 이우경 LAB. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
